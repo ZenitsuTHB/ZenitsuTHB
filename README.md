@@ -40,8 +40,8 @@
 
 <br clear="both">
 
-<img src="https://raw.githubusercontent.com/zenitsuTHB/zenitsuTHB/main/dist/snake.svg" alt="Snake animation">
-<!--div align="right">
+<!--img src="https://raw.githubusercontent.com/zenitsuTHB/zenitsuTHB/main/dist/snake.svg" alt="Snake animation">
+<div align="right">
   <img src="https://media1.giphy.com/media/h408T6Y5GfmXBKW62l/giphy.gif" />
 </div>
 -->
