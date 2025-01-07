@@ -2,12 +2,13 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
+    - cron: "0 0 * * *" # Runs daily at midnight
+  workflow_dispatch: # Allows manual trigger
 
 jobs:
   generate:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -17,6 +18,11 @@ jobs:
         with:
           github_user_name: zenitsuTHB
           output: dist/snake.svg
+
+      - name: Debug Check - File Exists
+        run: |
+          ls -la dist/
+          cat dist/snake.svg || echo "Snake file not generated"
 
       - name: Push Snake Animation
         uses: EndBug/add-and-commit@v9
